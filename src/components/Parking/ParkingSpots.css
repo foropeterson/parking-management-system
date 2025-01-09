@@ -1,0 +1,74 @@
+/* ParkingSpots.css */
+.parking-spots-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.parking-spots-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.parking-spots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.parking-spot-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.parking-spot-card:hover {
+  transform: translateY(-10px);
+}
+
+.parking-spot-card .spot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parking-spot-card .spot-header h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.parking-spot-card .vehicle-icon {
+  font-size: 2rem;
+  color: #3498db;
+}
+
+.parking-spot-card p {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin: 10px 0;
+}
+
+.parking-spot-card .status-icon {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.available-icon {
+  color: green;
+}
+
+.occupied-icon {
+  color: red;
+}
+
+.parking-spot-card.available {
+  background-color: #e8f5e9; /* Light green */
+}
+
+.parking-spot-card.occupied {
+  background-color: #fbe9e7; /* Light red */
+}
